@@ -1,0 +1,144 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem 3rem;
+  background: linear-gradient(180deg, #4a90d9 0%, #8fc7ff 45%, #eaf5ff 100%);
+  color: #1a2b3c;
+}
+
+.header {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.status {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.status.error {
+  color: #ffe0e0;
+}
+
+main {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.current-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.current-icon {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.current-temp {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+.current-label {
+  font-size: 1.1rem;
+  margin: 0.25rem 0 0.5rem;
+  color: #35506b;
+}
+
+.current-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.85rem;
+  color: #4a6178;
+}
+
+.forecast {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.forecast h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: #1a2b3c;
+}
+
+.forecast-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.forecast-item {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 0.95rem;
+}
+
+.forecast-item:last-child {
+  border-bottom: none;
+}
+
+.forecast-date {
+  color: #35506b;
+}
+
+.forecast-icon {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.forecast-temps {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+
+.temp-max {
+  font-weight: 600;
+  color: #d9534f;
+}
+
+.temp-min {
+  color: #4a6178;
+}
+
+.footer {
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
